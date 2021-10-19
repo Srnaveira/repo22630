@@ -1,0 +1,24 @@
+/*Pagina WIKI*/
+
+@import "./variables";
+@import "./fonts";
+
+.contwiki{
+    height: 82vh;
+    @each $secc in secA, secB, secC {
+        &__#{$secc}{
+            margin: 2rem;
+            background-color: $colorprueba;
+            border-radius: 15px;
+            &--art{
+                padding: 3rem;
+                p{
+                    font-family: $fonttexto;
+                    color: $colorprueba3;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

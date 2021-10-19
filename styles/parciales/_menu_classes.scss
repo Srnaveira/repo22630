@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./fonts";
+@import"./reponsive";
+
+
+.navclases{
+    background-color: black;
+    position: fixed;
+    bottom: 3.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    @include movil{
+        bottom: 6.8rem;
+        flex-direction: column;
+
+    }
+    h1{
+        color: $colorfootertexto;
+        font-family: $fontprincipal;
+        width: 40%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    &__menu{
+
+        ul{
+           display: flex;
+           li{
+              flex-direction: column;
+              margin: 0rem 4rem;    
+              @include movil{
+                margin: 0rem 1rem;
+              }            
+              a{
+                font-family: $fontprincipal;
+                color: $colortextomenu;
+                @include movil{
+                font-size: 1rem;
+                }
+                &:hover{
+                    color: $colorhovermenus;
+                }
+              }
+            
+           }
+        }
+    }
+}

@@ -1,0 +1,204 @@
+/* HTML SHOPS*/
+@import "./variables";
+@import "./fonts";
+@import "./reponsive";
+
+
+.edicionProductos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: $colorprueba1;
+        width: 100%;
+        height: 100%;
+        @include movil{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__standart{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &--divstandart{
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 2rem 1.4rem 2rem;
+                background-color: $colorprueba1;
+                width: 90%;
+                height: 50vh;            
+                @include movil{
+                    height: 20vh;
+                    margin: 2rem 1rem 1.4rem 1rem;
+                }
+                ul{ 
+                    border-radius: 10px;
+                    height: 40vh;
+                    background-color: $colorprueba;
+                    padding-top:4rem ;
+                    li{
+                    color: $colorprueba3;
+                    text-align: center;
+                    }
+                }
+                p{
+                    padding: 0.7rem 0rem 0rem 0rem;
+                    border-radius: 10px;
+                    margin-top: 4px;
+                    background-color: $colorprueba;
+                    color: $colorfusuario;
+                    font-family: $fonttexto;
+                    font-weight: 900;
+                    text-align: center;
+                    flex-direction: row;    
+                    justify-content: center;
+                    align-items: center;
+                    height: 10vh;
+                }        
+
+            }
+            &--buttomShop{
+                align-items: center;
+                border: solid $colorfusuario 3px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 4px;
+                justify-content: center;
+                margin-bottom: 1rem;
+                background-color: $backgroundmenues;
+                width: 50%;
+                font-family: $fontprincipal;
+                font-size: 18px;
+                color: $colorfusuario;
+                &:hover{
+                    background-color: $colorbotonescompra;
+                    color: $colorprueba3;
+                    border: solid $colorprueba3 3px;
+                }
+            }
+        }
+        &__master{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &--divmaster{
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 2rem 1.4rem 2rem;
+                background-color: $colorprueba1;
+                width: 90%;
+                height: 50vh;
+                @include movil{
+                    height: 20vh;
+                    margin: 2rem 1rem 1.4rem 1rem;
+                }                
+                ul{ 
+                    border-radius: 10px;
+                    height: 40vh;
+                    background-color: $colorprueba;
+                    padding-top:4rem ;
+                    li{
+                    color: $colorprueba3;
+                    text-align: center;
+                    }
+                }
+                p{
+                    padding: 0.7rem 0rem 0rem 0rem;
+                    border-radius: 10px;
+                    margin-top: 4px;
+                    background-color: $colorprueba;
+                    color: $colorfusuario;
+                    font-family: $fonttexto;
+                    font-weight: 900;
+                    text-align: center;
+                    flex-direction: row;    
+                    justify-content: center;
+                    align-items: center;
+                    height: 10vh;
+                }        
+
+            }
+            &--buttomShop{
+                align-items: center;
+                border: solid $colorfusuario 3px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 4px;
+                justify-content: center;
+                margin-bottom: 1rem;
+                background-color: $backgroundmenues;
+                width: 50%;
+                font-family: $fontprincipal;
+                font-size: 18px;
+                color: $colorfusuario;
+                &:hover{
+                    background-color: $colorbotonescompra;
+                    color: $colorprueba3;
+                    border: solid $colorprueba3 3px;
+                }
+            }
+        }
+        &__legendary{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            &--divlegendary{
+                display: flex;
+                flex-direction: column;
+                margin: 2rem 2rem 1.4rem 2rem;
+                background-color: $colorprueba1;
+                width: 90%;
+                height: 50vh;
+                @include movil{
+                    height: 26vh;
+                    margin: 2rem 1rem 1.4rem 1rem;
+                }                
+                ul{ 
+                    border-radius: 10px;
+                    height: 40vh;
+                    background-color: $colorprueba;
+                    padding-top:4rem ;
+                    li{
+                    color: $colorprueba3;
+                    text-align: center;
+                    }
+                }
+                p{
+                    padding: 0.7rem 0rem 0rem 0rem;
+                    border-radius: 10px;
+                    margin-top: 4px;
+                    background-color: $colorprueba;
+                    color: $colorfusuario;
+                    font-family: $fonttexto;
+                    font-weight: 900;
+                    text-align: center;
+                    flex-direction: row;    
+                    justify-content: center;
+                    align-items: center;
+                    height: 10vh;
+                }        
+
+            }
+            &--buttomShop{
+                align-items: center;
+                border: solid $colorfusuario 3px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 4px;
+                justify-content: center;
+                margin-bottom: 1rem;
+                background-color: $backgroundmenues;
+                width: 50%;
+                font-family: $fontprincipal;
+                font-size: 18px;
+                color: $colorfusuario;
+                @include movil {
+                    margin-bottom: 6rem;
+                }
+                &:hover{
+                    background-color: $colorbotonescompra;
+                    color: $colorprueba3;
+                    border: solid $colorprueba3 3px;
+                }
+            }
+        }
+}

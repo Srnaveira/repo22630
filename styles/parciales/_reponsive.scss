@@ -1,0 +1,17 @@
+/*Responsive*/
+
+@import "./variables";
+@import "./fonts";
+
+
+@mixin tablet{
+    @media screen and (max-width: 769px) {
+        @content;   
+    }
+}
+
+@mixin movil{
+    @media screen and (max-width: 426px) {
+        @content;   
+    }    
+}

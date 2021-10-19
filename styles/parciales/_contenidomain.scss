@@ -1,0 +1,146 @@
+@import "./variables";
+@import "./fonts";
+
+.seccionesContenido{
+    background-color: $colorprueba1;
+    padding: 0rem 2rem;
+    @include movil{
+        padding: 0rem 0rem;
+    }
+    &__divprincipal{
+        background-color: $colorprueba;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        @include movil{
+            flex-direction: column;
+        }
+        &__img{
+            &--imapersonaje{
+                border-radius: 15px;
+                width: 280px;
+                margin: 5px 5px 2px 5px;
+                border: solid 2px $colorbordeusuario;
+            }            
+        }
+        &--parrafo{
+            font-family: $fonttexto;
+            font-weight: 400;
+            font-size: 23px;
+            margin: 2rem;
+            color: $colorfusuario;
+            @include movil{
+                font-size: 16px;
+            }
+        
+        }
+    }
+    &__world{
+        &__divprincipal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+            border-radius: 15px;
+            background-color: $colorprueba;
+            @include movil{
+                flex-direction: column;
+            }
+            &--texto{
+                h2{
+                    color:$colorbordeusuario;
+                    font-family: $fontprincipal;
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    padding-left: 6rem;
+                    margin: 1rem 0rem 1rem 0rem ; 
+                    font-style: italic;
+                    width: 60%;
+                    @include movil{
+                        font-size: 2rem;
+                        padding-left: 2rem;
+                        width: 100%;
+                    }
+                
+                }
+                p{
+                    font-family: $fonttexto;
+                    font-weight: 400;
+                    width: 90%;
+                    padding-left: 1rem;
+                    font-size: 21px;
+                    margin: 1rem;
+                    color: $colorfusuario;
+                    font-family: $fonttexto;
+                    @include movil{
+                        font-size: 16px;
+                    }
+                }
+            }
+        &--imagenworld{
+            border-radius: 15px;
+            width: 210px;
+            margin: 5px 5px 2px 5px;
+            border: solid 2px $colorbordeusuario;
+        }
+        }
+    }
+    &__explore{
+        padding-bottom: 3.5rem;
+        @include movil{
+            padding-bottom: 6rem;
+        }
+        &__divprincipal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $colorprueba;
+            border-radius: 15px;
+            margin: 2rem;
+            @include movil{
+                flex-direction: column;
+            }
+            &--imagenExplore{
+                border-radius: 15px;
+                height: 290px;
+                margin: 5px 5px 2px 5px;
+                border: solid 2px $colorbordeusuario;
+                margin: 1rem 1rem;
+            }
+            &--texto{
+                justify-content: center;
+                    h2{
+                        color:$colorbordeusuario;
+                        font-family: $fontprincipal;
+                        font-size: 2.2rem;
+                        font-weight: 800;
+                        text-align: center;
+                        margin: 0rem 0rem 1rem 0rem ; 
+                        font-style: italic;
+                        width: 100%;
+                        @include movil{
+                            font-size: 2rem;
+                        }
+                    }
+                    p{
+                        font-family: $fonttexto;
+                        font-weight: 400;
+                        margin: 0rem 2rem;
+                        justify-content: center;
+                        padding-left: 0rem;
+                        font-size: 21px;
+                        text-align: center;
+                        color: $colorfusuario;
+                        font-family: $fonttexto;
+                        @include movil{
+                            font-size: 16px;
+                            margin: 0rem 1rem;
+                        }
+                   }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,343 @@
+@import "./variables";
+@import "./fonts";
+@import"./reponsive";
+
+
+.createFormulario{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    @include movil{
+        height: 72vh;
+        padding: 1rem;
+        border: red solid;
+        margin: 1rem;
+    }
+    &__fieldset{
+        background-color: $colorprueba;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem;
+        border-radius: 15px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        @include movil{
+            margin: 0rem;
+            padding: 1rem;
+            border: blue solid; 
+         }   
+         &--name{
+                background-color: $colorprueba;
+                width: 500px;
+                padding: 2px;
+                margin: 8px 0px 8px 0px;
+                border-radius: 5px;
+                @include movil{
+                    width: 250px;
+                }
+                label{
+                    font-family: $fontprincipal;
+                    color: $colorprueba3;
+                    font-size: 1rem;
+                    margin-right: 1.1rem;
+                }
+                input{
+                    width: 300px;
+                    height: 30px;
+                    border-radius: 5px;
+                    font-family: $fonttexto;
+                    font-size: 1rem;
+                    font-style: italic;
+                    border: $colorbordeusuario solid 2px;
+                    @include movil{
+                        width: 250px;
+                    }
+             }
+         }
+         &--mail{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 300px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 0.8rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 300px;
+                 }
+             }
+         }
+         &--problem{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 300px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 0.8rem;
+             }
+             select{
+                 width: 200px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 300px;
+                     margin-top: 10px;
+                 }   
+             }
+         }
+         &--description{
+             background-color: $colorprueba;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             display: flex;
+             align-items: flex-start;
+             @include movil{
+                display: flex;
+                flex-direction: column;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 0.8rem;
+             }
+             textarea{
+                 width: 650px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 300px;
+                 }
+             }
+                   }
+         &--butoom{
+             display: flex;
+             justify-content: center;
+             height: auto;
+             input{
+                 background-color: $backgroundmenues;
+                 color: $colorfusuario;
+                 border: $colorfusuario solid 2px;
+                 margin-top: 5px;
+                 padding: 0px 2.4rem 0px 2.4rem;
+                 font-family: $fontprincipal;
+                 font-size: 1.5rem;
+                 border-radius: 15px;
+                 &:hover{
+                     background-color: $colorbotonescompra;
+                     color: $colorprueba3;
+                     border: solid $colorprueba3 2px;
+                 }
+             }
+         }
+         &--mail2{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 3rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }
+             }
+         }
+         &--passw{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 5.3rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }
+             }
+         }
+         &--passw2{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 1rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }
+             }
+         }   
+         &--dname{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 3.6rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }
+             }
+         }
+         &--checbox{
+             background-color: $colorprueba;
+             width: 600px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 1rem;
+             }
+             input{
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }               
+             }
+             spam{
+                 font-family: $fonttexto;
+                 color: $colorprueba3;
+                 font-size: 0.9rem;
+                 margin-right: 1rem;
+                 @include movil{
+                  margin-right: 1rem;
+                  display:inline-block;
+                  text-align: center;   
+                 }
+             }
+             
+         }
+         &--birth{
+             background-color: $colorprueba;
+             width: 500px;
+             padding: 2px;
+             margin: 8px 0px 8px 0px;
+             border-radius: 5px;
+             @include movil{
+                 width: 280px;
+             }
+             label{
+                 font-family: $fontprincipal;
+                 color: $colorprueba3;
+                 font-size: 1rem;
+                 margin-right: 3.6rem;
+             }
+             input{
+                 width: 300px;
+                 height: 30px;
+                 font-family: $fonttexto;
+                 font-size: 1rem;
+                 font-style: italic;
+                 border-radius: 5px;
+                 border: $colorbordeusuario solid 2px;
+                 @include movil{
+                     width: 280px;
+                 }
+             }
+         }
+    }
+    
+}
+

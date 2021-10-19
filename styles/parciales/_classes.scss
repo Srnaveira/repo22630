@@ -1,0 +1,70 @@
+@import "./variables";
+@import "./fonts";
+@import"./reponsive";
+
+.contenedorJobs{
+    background-color: $colorprueba1;
+    &__classes{
+        border-radius: 15px;
+        @each $classe in rogue, warrior, wizard, cleric {
+            &__#{$classe}{
+                display: grid;
+                grid-template-columns: 1fr 250px;
+                background-color: $colorprueba;
+                border-radius: 15px;
+                margin: 1.5rem 2rem 2rem 2rem;
+                @include movil{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 1.5rem 1rem 11rem 1rem;
+                }
+                &--texto{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2rem;
+                    h2{
+                       font-family: $fontprincipal;
+                       color: $colorfusuario;
+                       margin-bottom: 1rem;
+                       @include movil{
+                        font-size: 3rem;
+                    } 
+                    }
+                    h3{
+                       font-family: $fontprincipal;
+                       color: $colorfusuario;
+                       margin: 1rem 0rem;
+                       @include movil{
+                        font-size: 2rem;
+                    } 
+                    }
+                    p{
+                       font-family: $fonttexto;
+                       font-weight: 400;
+                       color: $colorhovermenus;
+                       @include movil{
+                        font-size: 1.2rem;
+                    } 
+                    }   
+                }
+                &--imagen{
+                    justify-content: center;
+                    align-items: center;
+                    align-self: center;   
+                    img{
+                        margin: 4px 1px 1px 10px;
+                        width: 230px;
+                        border: $colorbordeusuario solid 2px;
+                        border-radius: 15px;
+                        @include movil{
+                            margin: 0rem 0rem 2rem 0rem;
+                        } 
+                    }
+                }
+               
+            }
+        }
+    }
+}
+

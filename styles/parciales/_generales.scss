@@ -1,0 +1,36 @@
+/*Configuracion general */
+
+@import "./variables";
+@import "./fonts";
+@import "./reponsive";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: $fonttexto;
+}
+
+.contenedorPrincipal {
+    background-color: $colorprueba1;
+    width: 100%;
+}
+
+
+.titulospagina{
+     h1{
+        color: $colorfootertexto;
+        font-family: $fontprincipal;
+        font-weight: 700;
+        background-color: $colorprueba;
+        text-align: center;
+        padding: 0.4rem;
+        @include movil{
+            
+            padding: 1rem 0rem;
+            font-size: 2rem;
+        }
+     }
+}

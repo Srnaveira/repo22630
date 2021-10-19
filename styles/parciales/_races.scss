@@ -1,0 +1,110 @@
+@import "./variables";
+@import "./fonts";
+@import "./reponsive";
+
+.races{
+    background-color: $colorprueba1;
+    display: grid;
+    grid-gap: 0.5rem;
+    padding-bottom: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    @include movil{
+        display: flex;
+        flex-direction: column;
+        height: 118vh;
+
+    }
+    @each $races in human, elf, dwarf {
+        &__#{$races}{
+            padding: 0rem 2rem;
+            border-radius: 15px;
+            background-color: $colorprueba;
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__div{
+                h2{
+                    text-align: center;
+                    font-family: $fontprincipal;
+                    color: $colorbordeusuario;
+                }
+                &--imagen{
+                    border: solid $colorbordeusuario 2px;
+                    border-radius: 15px;
+                    background-color: $colorprueba;
+                    width: 310px;
+                    height: 400px;
+                    margin-bottom: 3px;
+                    &:hover{
+                        border: red solid 2px;
+                        transform: scale(1.02 ,1.02);
+                    }
+                }
+                    
+            }
+                
+        }
+    }
+}
+
+
+@each $races in human, elf, dwarf {
+    .#{$races}{
+        border-radius: 20px;
+        background-color: $colorprueba;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        @include movil{
+            margin: 1rem;
+            margin-bottom: 8rem;
+            
+        }
+        &__article{
+            &__descrip{
+                display: grid;
+                grid-template-columns: 1fr 250px;
+                @include movil{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &--texto{    
+                    h2{
+                        text-align: start;
+                        padding: 1rem 2rem 0.5rem 2rem;
+                        font-family: $fontprincipal;
+                        font-size: 2rem;
+                        color: $colorbordeusuario;
+                    }
+                    p{
+                        font-family: $fonttexto;
+                        color: $colorhovermenus;
+                        margin: 0rem 2rem 1.1rem 2rem;
+                        font-size: 0.9rem;
+                        @include movil{
+                            margin: 0rem 1rem 1.1rem 1rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }    
+                &--imagen{
+                        img{
+                            border: solid $colorbordeusuario 2px;
+                            border-radius: 15px;
+                            height: 480px;
+                            margin-top: 2rem;
+                            @include movil{
+                                margin: 1rem;
+                            }
+                    
+                        }   
+                }
+                
+            }
+            
+        }
+    }
+}

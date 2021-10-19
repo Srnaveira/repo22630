@@ -1,0 +1,62 @@
+@import "./variables";
+@import "./fonts";
+@import"./reponsive";
+
+
+
+.error404{
+    margin: 2rem;
+    @include movil {
+        margin: 0rem;
+    }
+    &__div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+        margin: 1rem;
+        background-image: url(../images/stones-excalibur_00415712.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        @include movil {
+        height: 60vh;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        }
+        &__mensaje{
+            font-size: 11rem;
+            font-family: $fontprincipal;
+            font-weight: 900;
+            margin: 1rem;
+            text-align: center;
+            width: 100%;
+            color: white;
+            @include movil {
+                font-size: 7rem;
+                font-family: $fontprincipal;
+                font-weight: 900;
+                margin: 1rem;
+                width: 80%;
+                text-align: center;
+            }
+        
+        }
+        &__mensaje2{
+            font-size: 2rem;
+            font-family: $fontprincipal;
+            font-weight: 900;
+            margin: 2rem;
+            color: red;
+            @include movil {
+                font-size: 2rem;
+                font-family: $fontprincipal;
+                font-weight: 900;
+                margin: 1rem;
+                width: 80%;
+                color: red;
+                text-align: center;
+            }
+        }
+    }
+}

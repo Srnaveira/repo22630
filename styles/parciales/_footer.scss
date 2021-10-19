@@ -1,0 +1,66 @@
+/* Footer */
+
+@import "./variables";
+@import "./fonts";
+
+.classFooter{
+    background-color: $backgroundmenues;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.4rem;
+    &__divprincipal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include movil{
+            flex-direction: column;
+        }
+        &__divtext{
+                h2{
+                font-family: $fontprincipal;
+                font-size: 1.8rem;
+                color: $colorlogo;
+                margin-left: 4rem;
+                font-weight:900;
+                @include movil{
+                    margin-left: 0rem;
+                }
+                }
+        }
+        &__divcomunidad{
+                width: 25%;
+                margin-right: 4rem;            
+                @include movil{
+                    flex-direction: column;
+                    width: 100%;
+                    margin:0rem;
+                }    
+                    ul{
+                    display: flex;
+                    justify-content: space-between;
+                    @include movil{
+                        justify-content: center;
+                        align-items: center;   
+                    }
+                      li{
+                        font-family: $fontprincipal;
+                        color: $colorfootertexto;
+                        font-size: 1.6rem;
+                        @include movil{
+                            font-size: 1rem;
+                            margin: 0.6rem;   
+                        }   
+                        a{
+                            font-family: $fontprincipal;
+                            color: $colorfootertexto;
+                            font-size: 1.6rem;
+                        } 
+                      }   
+                    }
+        }
+    }
+
+
+}
+

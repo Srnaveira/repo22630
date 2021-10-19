@@ -1,0 +1,120 @@
+/* Menu usuario y navegacion*/
+@import "./variables";
+@import "./fonts";
+@import "./reponsive";
+
+.header{
+    &__menuusuario{
+        display: flexbox;
+        background-color: $backgroundmenues;
+        &__nav{
+            &__ulusuario{
+                text-align: right;
+                border: 1px $colorbordeusuario solid;    
+                @include movil{
+                    text-align: center;
+                }
+                   li{
+                   display: inline-block;
+                   margin:  0rem 1rem 0rem 3rem;
+                   
+                   @include movil{
+                       margin:  0rem 1rem 0rem 1rem;
+                   }        
+                      a{
+                        color: $colorfusuario;
+                        font-family: $fontprincipal;
+                        font-size: small;                       
+                        @include movil{
+                            font-size: 14px;
+                        }
+                        &:hover{
+                           color: $colorhovermenus;
+                        }
+                
+                      }
+                   }
+            }
+        }      
+    }
+
+    &__menunavegacion{
+        display: flex;    
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $backgroundmenues;
+        padding:  0.3rem;
+        width: 100%;
+        @include movil{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+           @include movil{
+               padding-top: 1rem;
+           }    
+           a{
+            color: $colorlogo;
+            font-family: $fontprincipal;
+            padding-left: 1.4rem;
+            font-size: 1.9rem;
+            @include movil{
+                padding-left: 0rem;
+            }
+            }
+        } 
+        &__menuprincipal{
+            display: flex;
+            margin: 0.1rem;
+            li{
+                display: inline-block;
+                padding: 0rem 0.6rem 0rem 2.1rem;
+                font-family: $fontprincipal; 
+                @include movil{
+                    padding: 1rem 0.85rem 1rem 0.85rem;
+                }
+                a{
+                 display: block;     
+                 font-family: $fontprincipal;
+                 font-size: 19px;
+                 color: $colortextomenu;
+                 @include movil{
+                    font-size: 16px;
+                }
+                 &:hover{
+                    color: $colorhovermenus;
+                        }
+                }
+                .submenu{
+                    position: absolute;
+                    background-color:$backgroundmenues;
+                    display: none;
+                        li{
+                            padding: 0rem;
+                            display: block;
+                            font-family: $fontprincipal;
+                            color: $colortextomenu;                    
+                            a{
+                                margin: 0.2rem 0.3rem 0.2rem 0.3rem;
+                                font-family: $fontprincipal;
+                                color: $colortextomenu;                    
+                                &:hover{
+                                    color: $colorhovermenus;
+                                }
+                            }
+                            
+                
+                        } 
+                        
+                }
+                &:hover .submenu{
+                    display: block;
+                    z-index: 9999;
+                    background-color: rgba(0, 0, 0, 0.909);
+                }
+
+            }
+        }    
+    }
+}
