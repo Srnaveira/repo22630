@@ -15,7 +15,7 @@
     @include movil{
         background-size: cover;
         background-position-x: 90%;
-        height: 90vh; 
+        height: 70vh; 
     }
     &__container{
         width: 45%;
@@ -51,7 +51,7 @@
             width: 96%;
             font-size: 18px;
             @include movil{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 width: 100%;  
                 text-align: center;
                 padding: 1rem;

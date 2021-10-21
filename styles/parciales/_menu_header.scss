@@ -61,6 +61,7 @@
             font-size: 1.9rem;
             @include movil{
                 padding-left: 0rem;
+                font-size: 1.6rem;
             }
             }
         } 
@@ -72,7 +73,7 @@
                 padding: 0rem 0.6rem 0rem 2.1rem;
                 font-family: $fontprincipal; 
                 @include movil{
-                    padding: 1rem 0.85rem 1rem 0.85rem;
+                    padding: 1rem 0.40rem 1rem 0.40rem;
                 }
                 a{
                  display: block;     
@@ -80,7 +81,7 @@
                  font-size: 19px;
                  color: $colortextomenu;
                  @include movil{
-                    font-size: 16px;
+                    font-size: 14px;
                 }
                  &:hover{
                     color: $colorhovermenus;
@@ -96,12 +97,12 @@
                             font-family: $fontprincipal;
                             color: $colortextomenu;                    
                             a{
-                                margin: 0.2rem 0.3rem 0.2rem 0.3rem;
-                                font-family: $fontprincipal;
-                                color: $colortextomenu;                    
-                                &:hover{
-                                    color: $colorhovermenus;
-                                }
+                              margin: 0.2rem 0.3rem 0.2rem 0.3rem;
+                              font-family: $fontprincipal;
+                              color: $colortextomenu;                    
+                              &:hover{
+                                  color: $colorhovermenus;
+                              }
                             }
                             
                 
