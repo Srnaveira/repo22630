@@ -1236,7 +1236,6 @@
 
 /*Responsive*/
 .races {
-  border: red solid;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
