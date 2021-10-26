@@ -1243,7 +1243,6 @@
   grid-gap: 1rem;
   background-image: url(../images/wallpapersden.com_fantasy-forest-city_3840x2400.jpg);
   background-size: cover;
-  padding: 0rem 0rem 2rem 0rem;
   height: 85vh;
 }
 
@@ -1272,15 +1271,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 0.6rem;
   border-radius: 15px;
-  margin: 1rem;
+  margin: 0rem 1rem;
 }
 
 .races__human__div h2 {
@@ -1288,16 +1287,16 @@
   font-family: "Permanent Marker", cursive;
   color: goldenrod;
   font-size: 3rem;
+  margin-top: 0.4rem;
 }
 
 .races__human__div--imagen {
   border: solid goldenrod 2px;
   border-radius: 15px;
-  margin-bottom: 3px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 470px;
-  width: 360px;
+  height: 380px;
+  width: 290px;
 }
 
 @media screen and (max-width: 321px) {
@@ -1320,8 +1319,8 @@
 
 .races__human__div--imagen:hover {
   border: red solid 2px;
-  -webkit-transform: scale(1.2, 1.1);
-          transform: scale(1.2, 1.1);
+  -webkit-transform: scale(1.04, 1.06);
+          transform: scale(1.04, 1.06);
 }
 
 .races__elf {
@@ -1332,15 +1331,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 0.6rem;
   border-radius: 15px;
-  margin: 1rem;
+  margin: 0rem 1rem;
 }
 
 .races__elf__div h2 {
@@ -1348,16 +1347,16 @@
   font-family: "Permanent Marker", cursive;
   color: goldenrod;
   font-size: 3rem;
+  margin-top: 0.4rem;
 }
 
 .races__elf__div--imagen {
   border: solid goldenrod 2px;
   border-radius: 15px;
-  margin-bottom: 3px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 470px;
-  width: 360px;
+  height: 380px;
+  width: 290px;
 }
 
 @media screen and (max-width: 321px) {
@@ -1380,8 +1379,8 @@
 
 .races__elf__div--imagen:hover {
   border: red solid 2px;
-  -webkit-transform: scale(1.2, 1.1);
-          transform: scale(1.2, 1.1);
+  -webkit-transform: scale(1.04, 1.06);
+          transform: scale(1.04, 1.06);
 }
 
 .races__dwarf {
@@ -1392,15 +1391,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0rem 2rem;
+  padding: 0rem 0.6rem;
   border-radius: 15px;
-  margin: 1rem;
+  margin: 0rem 1rem;
 }
 
 .races__dwarf__div h2 {
@@ -1408,16 +1407,16 @@
   font-family: "Permanent Marker", cursive;
   color: goldenrod;
   font-size: 3rem;
+  margin-top: 0.4rem;
 }
 
 .races__dwarf__div--imagen {
   border: solid goldenrod 2px;
   border-radius: 15px;
-  margin-bottom: 3px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 470px;
-  width: 360px;
+  height: 380px;
+  width: 290px;
 }
 
 @media screen and (max-width: 321px) {
@@ -1440,19 +1439,15 @@
 
 .races__dwarf__div--imagen:hover {
   border: red solid 2px;
-  -webkit-transform: scale(1.2, 1.1);
-          transform: scale(1.2, 1.1);
+  -webkit-transform: scale(1.04, 1.06);
+          transform: scale(1.04, 1.06);
 }
 
 .divRaces {
   background-image: url(../images/human.jpg);
   background-size: cover;
-  width: auto;
-  height: 85vh;
-  padding: 2rem 2rem 5rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 135vh;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 @media screen and (max-width: 426px) {
@@ -1478,15 +1473,6 @@
     margin: 1rem;
     margin-bottom: 7rem;
   }
-}
-
-.divRaces .human__article {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .divRaces .human__article__descrip {
@@ -1526,7 +1512,7 @@
   font-family: "Roboto", sans-serif;
   color: white;
   margin: 0rem 1rem 1.1rem 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 426px) {
@@ -1540,7 +1526,7 @@
   border: solid goldenrod 2px;
   border-radius: 15px;
   margin-top: 3rem;
-  height: 480px;
+  height: 470px;
 }
 
 @media screen and (max-width: 426px) {
@@ -1564,15 +1550,6 @@
     margin: 1rem;
     margin-bottom: 7rem;
   }
-}
-
-.divRaces .elf__article {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .divRaces .elf__article__descrip {
@@ -1612,7 +1589,7 @@
   font-family: "Roboto", sans-serif;
   color: white;
   margin: 0rem 1rem 1.1rem 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 426px) {
@@ -1626,7 +1603,7 @@
   border: solid goldenrod 2px;
   border-radius: 15px;
   margin-top: 3rem;
-  height: 480px;
+  height: 470px;
 }
 
 @media screen and (max-width: 426px) {
@@ -1650,15 +1627,6 @@
     margin: 1rem;
     margin-bottom: 7rem;
   }
-}
-
-.divRaces .dwarf__article {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .divRaces .dwarf__article__descrip {
@@ -1698,7 +1666,7 @@
   font-family: "Roboto", sans-serif;
   color: white;
   margin: 0rem 1rem 1.1rem 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 426px) {
@@ -1712,7 +1680,7 @@
   border: solid goldenrod 2px;
   border-radius: 15px;
   margin-top: 3rem;
-  height: 480px;
+  height: 470px;
 }
 
 @media screen and (max-width: 426px) {
