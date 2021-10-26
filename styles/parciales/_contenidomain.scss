@@ -2,10 +2,15 @@
 @import "./fonts";
 
 .seccionesContenido{
-    background-color: $colorprueba1;
+    border-top: $colorprueba3 3px solid;
+    background-image: url(../images/the-elder-scrolls-v--skyrim---special-edition-hero-img.webp);
+    background-size: contain;
+    background-attachment: fixed;
     padding: 0rem 2rem;
     @include movil{
         padding: 0rem 0rem;
+        background-size: cover;
+        background-position-x: 100%;
     }
     &__divprincipal{
         background-color: $colorprueba;
@@ -14,6 +19,7 @@
         justify-content: center;
         align-items: center;
         margin: 2rem;
+        opacity: 88%;
         @include movil{
             flex-direction: column;
             margin: 1rem;
@@ -32,7 +38,6 @@
         }
         &--parrafo{
             font-family: $fonttexto;
-            font-weight: 400;
             font-size: 23px;
             margin: 2rem;
             color: $colorprueba3;
@@ -52,6 +57,7 @@
             margin: 2rem;
             border-radius: 15px;
             background-color: $colorprueba;
+            opacity: 88%;
             @include movil{
                 flex-direction: column;
                 margin: 1rem;
@@ -61,7 +67,6 @@
                     color:$colorbordeusuario;
                     font-family: $fontprincipal;
                     font-size: 2.5rem;
-                    font-weight: 800;
                     padding-left: 6rem;
                     margin: 1rem 0rem 1rem 0rem ; 
                     font-style: italic;
@@ -76,7 +81,6 @@
                 }
                 p{
                     font-family: $fonttexto;
-                    font-weight: 400;
                     width: 90%;
                     padding-left: 1rem;
                     font-size: 21px;
@@ -94,6 +98,7 @@
             width: 210px;
             margin: 5px 5px 2px 5px;
             border: solid 2px $colorbordeusuario;
+            object-fit: cover;
             @include movil{
                width: 250px;
                margin-bottom: 1rem;
@@ -103,6 +108,7 @@
     }
     &__explore{
         padding-bottom: 3.5rem;
+        opacity: 88%;
         @include movil{
             padding-bottom: 6rem;
         }
@@ -120,13 +126,17 @@
             &--imagenExplore{
                 border-radius: 15px;
                 height: 290px;
+                
                 margin: 5px 5px 2px 5px;
                 border: solid 2px $colorbordeusuario;
                 margin: 1rem 1rem;
+                object-fit: fill;
                 @include movil{
                     margin-top: 1rem;
                     width: 250px;
                     margin-bottom: 1rem;
+                    
+                    
                  }
             }
             &--texto{
@@ -135,7 +145,6 @@
                         color:$colorbordeusuario;
                         font-family: $fontprincipal;
                         font-size: 2.2rem;
-                        font-weight: 800;
                         text-align: center;
                         margin: 0rem 0rem 1rem 0rem ; 
                         font-style: italic;
@@ -146,7 +155,6 @@
                     }
                     p{
                         font-family: $fonttexto;
-                        font-weight: 400;
                         margin: 0rem 2rem;
                         justify-content: center;
                         padding-left: 0rem;

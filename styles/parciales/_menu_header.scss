@@ -26,7 +26,7 @@
                         font-family: $fontprincipal;
                         font-size: small;                       
                         @include movil{
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                         &:hover{
                            color: $colorhovermenus;
@@ -55,7 +55,7 @@
                padding-top: 1rem;
            }    
            a{
-            color: $colorlogo;
+            color: white;
             font-family: $fontprincipal;
             padding-left: 1.4rem;
             font-size: 1.9rem;

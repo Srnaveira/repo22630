@@ -5,37 +5,138 @@
 
 
 .news{
+    background-image: url(../images/21494-fantasia.jpg);
+    background-size: cover;
     padding: 1rem 2rem 3rem 2rem;
     @include movil{
         padding: 0.5rem;
+        background-position-x: 80%;
     }
-    @each $monts in octubre, septiembre, agosto {
-        &__#{$monts}{
-            margin: 2rem;
-            padding: 1rem;
-            border: none;
-            background-color: $colorprueba;
-            border-radius: 15px;
-            @include movil{
-                margin: 1rem 0rem 1rem 0rem;
+    &__octubre{
+        opacity: 80%;
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: $colorprueba;
+        border-radius: 15px;
+        @include movil{
+            margin: 1rem 0rem 1rem 0rem;
+        }
+        &--noticias{
+            h3{
+                font-family: $fontprincipal;
+                font-size: 2rem;
+                color: $colorbordeusuario;
+                margin: 1rem 0rem 1rem 2rem;
             }
-            &--noticias{
-                h3{
-                    font-family: $fontprincipal;
-                    font-size: 2rem;
-                    color: $colorbordeusuario;
-                    margin: 1rem 0rem 1rem 2rem;
+            div{
+                display: flex;
+                @include movil{
+                    flex-direction: column;
+                }
+                img{
+                    height: 200px;
+                    border: solid $colorfusuario;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    @include movil{
+                        height: 220px;
+                        width: 180px;
+                        align-self: center;
+                    }
                 }
                 p{
                     color: $colorprueba3;
                     margin: 1rem;
-                    text-align: justify;
                 }
             }
         }
-
+    }
+    &__septiembre{
+        opacity: 80%;
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: $colorprueba;
+        border-radius: 15px;
+        @include movil{
+            margin: 1rem 0rem 1rem 0rem;
+        }
+        &--noticias{
+            h3{
+                font-family: $fontprincipal;
+                font-size: 2rem;
+                color: $colorbordeusuario;
+                margin: 1rem 0rem 1rem 2rem;
+            }
+            div{
+                display: flex;
+                @include movil{
+                    flex-direction: column;
+                }
+                img{
+                    height: 160px;
+                    border: solid $colorfusuario;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    @include movil{
+                        height: 200px;
+                        width: 260px;
+                        align-self: center;
+                    }
+                }
+                p{
+                    align-self: center;
+                    color: $colorprueba3;
+                    margin: 1.5rem;
+                }
+            }
+        }
+    }
+    &__agosto{
+        opacity: 80%;
+        margin: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: $colorprueba;
+        border-radius: 15px;
+        @include movil{
+            margin: 1rem 0rem 1rem 0rem;
+        }
+        &--noticias{
+            h3{
+                font-family: $fontprincipal;
+                font-size: 2rem;
+                color: $colorbordeusuario;
+                margin: 1rem 0rem 1rem 2rem;
+            }
+            div{
+                display: flex;
+                @include movil{
+                    flex-direction: column;
+                }
+                img{
+                    height: 180px;
+                    width: 210px;
+                    border: solid $colorfusuario;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    @include movil{
+                        height: 220px;
+                        width: 240px;
+                        align-self: center;
+                    }
+                }
+                p{
+                    align-self: center;
+                    color: $colorprueba3;
+                    margin: 1.5rem;
+                }
+            }
+        }
     }
     &__julio{
+        opacity: 80%;
         margin: 2rem;
         padding: 1rem;
         border: none;

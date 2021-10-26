@@ -4,27 +4,26 @@
 
 
 .confFormularios{
-    background-color: $colorprueba1;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(../images/21455-fantasia.jpg);
+    background-size: cover;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 71vh;
     @include movil {
-        height: 79vh;
-        background: $colorprueba1;  
+        height: 70vh;
+        background-position-x: 100%;
     }
     &__fielprincipal{
             border-radius: 15px;
-            background-color: $colorprueba;
             color: $colorprueba3;
-            padding: 4rem 8rem 4rem 8rem;
+            padding: 1rem 8rem 1rem 8rem;
             border: none; 
             @include movil {
-                padding: 3rem;
+                padding: 3rem 1rem;
                 margin: 0rem;
             }
             &--inputemail{
-                background-color: $colorprueba;
                 border: none;
                 input{
                     background-color: $colorprueba3;
@@ -32,30 +31,15 @@
                     padding: 2px;
                     margin: 4px 0px 4px 0px;
                     font-family: $fontprincipal;
-                    color: red;
                     font-size: 1.2rem;
                     border: $colorbordeusuario solid 2px;
-                    border-radius: 5px;
-                    transition: all 2s;
+                    border-radius: 10px;
                     @include movil {
                         width: 280px;
-                        transition: none;
                     }
-                    &:focus{
-                          width: 400px;
-                          color:$colorprueba;
-                          font-weight: 900;
-                          font-style: italic;
-                          font-family: $fonttexto;
-                          @include movil {
-                           width: 200px;
-                          }
-                    }
-
                 }
             }
             &--inputpass{
-                background-color: $colorprueba;
                 border: none;
                 input{
                     background-color: $colorprueba3;
@@ -63,33 +47,17 @@
                     padding: 2px;
                     margin: 4px 0px 4px 0px;
                     font-family: $fontprincipal;
-                    color: red;
+                    color:black;
                     font-size: 1.2rem;
                     border: $colorbordeusuario solid 2px;
-                    border-radius: 5px;
-                    transition: all 2s;
+                    border-radius: 10px;
                     @include movil {
                         width: 280px;
-                        transition: none;
                     }
-                    &:focus{
-                          width: 400px;
-                          color:$colorprueba;
-                          font-weight: 900;
-                          font-style: italic;
-                          font-family: $fonttexto;
-                          @include movil {
-                            width: 200px;
-                          }
-                     
-                    
-                    }
-
                 }
             }
             &--inputremember{
                 display: flex;
-                background-color: $colorprueba;
                 width: 44%;
                 justify-content: space-between;
                 align-items: center;
@@ -98,7 +66,7 @@
                     width: 50%;
                 }
                 label{
-                    color: $colorbordeusuario;
+                    color: $colorprueba3;
                     font-family: $fontprincipal;
                     font-size: 1rem;
                 }

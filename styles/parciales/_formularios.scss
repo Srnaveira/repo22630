@@ -4,17 +4,21 @@
 
 
 .createFormulario{
-    height: 75vh;
+    height: 80vh;
+    background-image: url(../images/21456-fantasia.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     @include movil{
-        height: 72vh;
-        padding: 1rem;
-        border: red solid;
-        margin: 1rem;
+        background-position-x: 60%;
+        height: 93vh;
+        align-items: flex-start;
+        padding-top: 1rem;
+        margin-bottom: 4.1rem;
     }
     &__fieldset{
+        opacity: 80%;
         background-color: $colorprueba;
         padding: 1rem 1rem 1rem 1rem;
         margin: 1rem;
@@ -23,18 +27,16 @@
         justify-content: center;
         align-items: center;
         @include movil{
-            margin: 0rem;
-            padding: 1rem;
-            border: blue solid; 
+            margin: 2rem 0rem 2rem 0rem;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
          }   
          &--name{
-                background-color: $colorprueba;
                 width: 500px;
                 padding: 2px;
                 margin: 8px 0px 8px 0px;
                 border-radius: 5px;
                 @include movil{
-                    width: 250px;
+                    width: 290px;
                 }
                 label{
                     font-family: $fontprincipal;
@@ -51,18 +53,17 @@
                     font-style: italic;
                     border: $colorbordeusuario solid 2px;
                     @include movil{
-                        width: 250px;
+                        width: 290px;
                     }
              }
          }
          &--mail{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
              border-radius: 5px;
              @include movil{
-                 width: 300px;
+                 width: 290px;
              }
              label{
                  font-family: $fontprincipal;
@@ -79,18 +80,17 @@
                  border-radius: 5px;
                  border: $colorbordeusuario solid 2px;
                  @include movil{
-                     width: 300px;
+                     width: 290px;
                  }
              }
          }
          &--problem{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
              border-radius: 5px;
              @include movil{
-                 width: 300px;
+                 width: 290px;
              }
              label{
                  font-family: $fontprincipal;
@@ -107,13 +107,12 @@
                  border-radius: 5px;
                  border: $colorbordeusuario solid 2px;
                  @include movil{
-                     width: 300px;
+                     width: 290px;
                      margin-top: 10px;
                  }   
              }
          }
          &--description{
-             background-color: $colorprueba;
              padding: 2px;
              margin: 8px 0px 8px 0px;
              border-radius: 5px;
@@ -137,7 +136,7 @@
                  border-radius: 5px;
                  border: $colorbordeusuario solid 2px;
                  @include movil{
-                     width: 300px;
+                     width: 290px;
                  }
              }
                    }
@@ -145,6 +144,7 @@
              display: flex;
              justify-content: center;
              height: auto;
+             width: 100%;
              input{
                  background-color: $backgroundmenues;
                  color: $colorfusuario;
@@ -158,11 +158,12 @@
                      background-color: $colorbotonescompra;
                      color: $colorprueba3;
                      border: solid $colorprueba3 2px;
+                     
                  }
+
              }
          }
          &--mail2{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
@@ -175,7 +176,7 @@
                  color: $colorprueba3;
                  font-size: 1rem;
                  margin-right: 3rem;
-             }
+            }
              input{
                  width: 300px;
                  height: 30px;
@@ -190,7 +191,6 @@
              }
          }
          &--passw{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
@@ -218,7 +218,6 @@
              }
          }
          &--passw2{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
@@ -246,7 +245,6 @@
              }
          }   
          &--dname{
-             background-color: $colorprueba;
              width: 500px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
@@ -273,20 +271,29 @@
                  }
              }
          }
-         &--checbox{
+         &--checbox{ 
+             display: flex;
              background-color: $colorprueba;
              width: 600px;
              padding: 2px;
              margin: 8px 0px 8px 0px;
              border-radius: 5px;
+             justify-self: center;
              @include movil{
-                 width: 280px;
+                 width: 270px;
+                 margin: 0;
+                 padding: 0;
              }
              label{
                  font-family: $fontprincipal;
                  color: $colorprueba3;
                  font-size: 1rem;
-                 margin-right: 1rem;
+                 margin-right: 2rem;
+                 @include movil{
+                    margin-right: 1rem;
+   
+                }               
+
              }
              input{
                  font-style: italic;
@@ -294,17 +301,19 @@
                  border: $colorbordeusuario solid 2px;
                  @include movil{
                      width: 280px;
+    
                  }               
              }
              spam{
                  font-family: $fonttexto;
                  color: $colorprueba3;
                  font-size: 0.9rem;
+                 margin-left: 0.4rem;
                  margin-right: 1rem;
                  @include movil{
-                  margin-right: 1rem;
-                  display:inline-block;
-                  text-align: center;   
+                  margin-right: 0rem;
+                  margin-left: 0rem;
+                  text-align: center;
                  }
              }
              

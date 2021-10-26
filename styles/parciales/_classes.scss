@@ -3,21 +3,38 @@
 @import"./reponsive";
 
 .contenedorJobs{
-    background-color: $colorprueba1;
+    background-image: url(../images/21468-fantasia.jpg);
+    background-size: cover;
+    height: 85vh;
+    padding: 3rem 0rem;
+    display: flex;
+    @include movil{
+        height: auto;  
+        background-position-x: 84%;
+        background-position-y: 80%;
+    }
+    @include movil_320{
+        height: auto;
+    }
     &__classes{
-        border-radius: 15px;
+        justify-self: center;
+        align-self: center;
+        opacity: 75%;
         @each $classe in rogue, warrior, wizard, cleric {
             &__#{$classe}{
                 display: grid;
                 grid-template-columns: 1fr 250px;
                 background-color: $colorprueba;
                 border-radius: 15px;
-                margin: 1.5rem 2rem 2rem 2rem;
+                padding-top: 2rem;
+                margin: 1rem 2rem 2rem 2rem;                
                 @include movil{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin: 1.5rem 1rem 11rem 1rem;
+                    padding-top: 0rem;
+                    margin: 1rem 1rem 13rem 1rem;
+                    opacity: 88%;
                 }
                 &--texto{
                     display: flex;
@@ -28,7 +45,7 @@
                        color: $colorfusuario;
                        margin-bottom: 1rem;
                        @include movil{
-                        font-size: 3rem;
+                        font-size: 2.4rem;
                     } 
                     }
                     h3{
@@ -36,7 +53,7 @@
                        color: $colorfusuario;
                        margin: 1rem 0rem;
                        @include movil{
-                        font-size: 2rem;
+                            font-size: 2rem;
                     } 
                     }
                     p{
@@ -44,7 +61,8 @@
                        font-weight: 400;
                        color: $colorhovermenus;
                        @include movil{
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
+                        text-align: center;
                     } 
                     }   
                 }
@@ -57,8 +75,10 @@
                         width: 230px;
                         border: $colorbordeusuario solid 2px;
                         border-radius: 15px;
+                        object-fit: cover;
                         @include movil{
                             margin: 0rem 0rem 2rem 0rem;
+                            width: 272px;
                         } 
                     }
                 }
