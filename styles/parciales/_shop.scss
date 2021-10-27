@@ -12,13 +12,19 @@
         align-items: center;
         background-image: url(../images/GuildWars2-04-1920x1200.jpg);
         background-size: cover;
-        height: 85vh;
+        height: auto;
+        padding-bottom: 5rem;
         @include movil{
             background-position-x: 40%;
             display: flex;
             flex-direction: column;
             height: auto;
             padding-bottom: 5rem;
+        }
+        @include tablet{
+            height: auto;
+            padding-bottom: 4rem;
+            align-items: flex-start;
         }
         &__standart{
             opacity: 90%;
@@ -28,7 +34,10 @@
             padding: 2rem 2rem 2rem 2rem;
             @include movil{
                 padding: 2rem 0rem 1rem 0rem;
-            }    
+            }
+            @include tablet{
+                padding: 0rem;
+            }       
             &--divstandart{
                 display: flex;
                 background-color: $colorprueba1;
@@ -43,6 +52,9 @@
                     margin: 1rem 0rem 1rem 0rem;
                     width: 280px;
                 }
+                @include tablet{
+                    height: 39vh;
+                } 
                 img{
                     margin-top: 1rem;
                     width: 200px;
@@ -74,7 +86,10 @@
                     align-items: center;
                     @include movil{
                         padding: 0;
-                    }    
+                    }
+                    @include tablet{
+                        padding: 1.2rem 0rem 0rem 0rem;
+                    }     
                 }        
 
             }
@@ -106,7 +121,10 @@
             padding: 2rem 2rem 2rem 2rem;
             @include movil{
                 padding: 2rem 0rem 1rem 0rem;
-            }    
+            }
+            @include tablet{
+                padding: 0rem;
+            }        
             &--divmaster{
                 display: flex;
                 background-color: $colorprueba1;
@@ -120,7 +138,10 @@
                 @include movil{
                     margin: 1rem 0rem 1rem 0rem;
                     width: 280px;
-                }            
+                }
+                @include tablet{
+                    height: 39vh;
+                 }             
                 img{
                     margin-top: 1rem;
                     width: 200px;
@@ -153,7 +174,10 @@
                     align-items: center;
                     @include movil{
                         padding: 0;
-                    }    
+                    }
+                    @include tablet{
+                        padding: 0.6rem 0rem 0rem 0rem;
+                    } 
                 }        
 
             }
@@ -185,7 +209,10 @@
             padding: 2rem 2rem 1rem 2rem;
             @include movil{
                 padding: 2rem 0rem 1rem 0rem;
-            }    
+            }
+            @include tablet{
+                padding: 0rem;
+            }            
             &--divlegendary{
                 display: flex;
                 background-color: $colorprueba1;
@@ -199,7 +226,10 @@
                 @include movil{
                     margin: 1rem 0rem 1rem 0rem;
                     width: 280px;
-                }            
+                }
+                @include tablet{
+                   height: 39vh;
+                }                 
                 img{
                     margin-top: 1rem;
                     width: 200px;
@@ -232,6 +262,9 @@
                     @include movil{
                         padding: 0;
                     }    
+                    @include tablet{
+                       padding: 0.5rem 0rem 0rem 0rem; 
+                    }        
                 }   
             }   
             &--buttomShop{

@@ -3,9 +3,10 @@
 @import "./reponsive";
 
 .races{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
     background-image: url(../images/wallpapersden.com_fantasy-forest-city_3840x2400.jpg);
     background-size: cover;
     height: 85vh;
@@ -18,7 +19,16 @@
         background-size: cover;
         background-position-x: 70%;
     }
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 4rem;
+        background-size: cover;
+        background-position-x: 70%;
+        justify-content: center;
 
+    }
     @each $races in human, elf, dwarf {
         &__#{$races}{
             display: flex;
@@ -52,6 +62,10 @@
                         width: 258px;
                         height: 440px;
                         margin: 1rem;
+                    }
+                    @include tablet{
+                        height: 320px;
+                        width: 240px;
                     }                
                     &:hover{
                         border: red solid 2px;
@@ -77,6 +91,11 @@
         background-position-x: 60%;
         height: auto;
     }
+    @include tablet{
+        height: auto;
+        padding-bottom: 4rem;
+        background-position-x: 60%;
+    }
     @each $races in human, elf, dwarf {
         .#{$races}{
             display: flex;
@@ -88,6 +107,9 @@
                 margin: 1rem;
                 margin-bottom: 7rem;
             }
+            @include tablet{
+                height: auto;
+            }
             &__article{
                 &__descrip{
                     display: grid;
@@ -98,6 +120,7 @@
                         justify-content: center;
                         align-items: center;
                     }
+
                     &--texto{    
                         h2{
                             text-align: start;
@@ -115,6 +138,9 @@
                                 margin: 0rem 1rem 1.1rem 1rem;
                                 font-size: 1.2rem;
                             }
+                            @include tablet{
+                                
+                            }
                         }
                     }    
                     &--imagen{
@@ -126,6 +152,7 @@
                                 @include movil{
                                     margin: 1rem;
                                 }
+                                
                             
                             }   
                     }

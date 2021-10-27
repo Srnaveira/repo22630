@@ -12,6 +12,10 @@
         padding: 0.5rem;
         background-position-x: 80%;
     }
+    @include tablet{
+        padding: 1rem;
+        background-position-x: 30%;
+    }
     &__octubre{
         opacity: 80%;
         margin: 2rem;
@@ -21,6 +25,9 @@
         border-radius: 15px;
         @include movil{
             margin: 1rem 0rem 1rem 0rem;
+        }
+        @include tablet{
+            margin: 1rem;
         }
         &--noticias{
             h3{
@@ -44,6 +51,10 @@
                         width: 180px;
                         align-self: center;
                     }
+                    @include tablet{
+                        height: 220px;
+                        align-self: center;
+                    }
                 }
                 p{
                     color: $colorprueba3;
@@ -61,6 +72,9 @@
         border-radius: 15px;
         @include movil{
             margin: 1rem 0rem 1rem 0rem;
+        }
+        @include tablet{
+            margin: 1rem;
         }
         &--noticias{
             h3{
@@ -84,11 +98,14 @@
                         width: 260px;
                         align-self: center;
                     }
+                    @include tablet{
+                        height: 150px;
+                        align-self: center; 
+                    }
                 }
                 p{
-                    align-self: center;
                     color: $colorprueba3;
-                    margin: 1.5rem;
+                    margin: 1rem;
                 }
             }
         }
@@ -102,6 +119,9 @@
         border-radius: 15px;
         @include movil{
             margin: 1rem 0rem 1rem 0rem;
+        }
+        @include tablet{
+            margin: 1rem;
         }
         &--noticias{
             h3{
@@ -126,11 +146,16 @@
                         width: 240px;
                         align-self: center;
                     }
+                    @include tablet{
+                        height: 220px;
+                        width: 240px;
+                        align-self: center;
+                    }
                 }
                 p{
                     align-self: center;
                     color: $colorprueba3;
-                    margin: 1.5rem;
+                    margin: 1rem;
                 }
             }
         }
@@ -148,7 +173,9 @@
         align-self: center;              
         @include movil{
             margin: 0.5rem;
-            padding: 1rem;
+        }
+        @include tablet{
+            margin: 1rem;
         }
         &--noticias{
             width: 100%;

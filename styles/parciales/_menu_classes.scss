@@ -15,7 +15,10 @@
     @include movil{
         bottom: 6.5rem;
         flex-direction: column;
-
+    }
+    @include tablet{
+        bottom: 3.1rem;
+        flex-direction: column;
     }
     h1{
         color: $colorfootertexto;

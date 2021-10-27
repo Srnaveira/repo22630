@@ -17,6 +17,9 @@
         padding-top: 1rem;
         margin-bottom: 4.1rem;
     }
+    @include tablet{
+        height: 84vh;
+    }
     &__fieldset{
         opacity: 80%;
         background-color: $colorprueba;
@@ -37,6 +40,9 @@
                 border-radius: 5px;
                 @include movil{
                     width: 290px;
+                }
+                @include tablet{
+                    width: 500px;
                 }
                 label{
                     font-family: $fontprincipal;
@@ -138,6 +144,9 @@
                  @include movil{
                      width: 290px;
                  }
+                 @include tablet{
+                    width: 500px;
+                }
              }
                    }
          &--butoom{

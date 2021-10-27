@@ -12,6 +12,11 @@
         background-size: cover;
         background-position-x: 100%;
     }
+    @include tablet{
+        padding: 0rem 0rem;
+        background-size: cover;
+        background-position-x: 100%;
+    }
     &__divprincipal{
         background-color: $colorprueba;
         border-radius: 15px;
@@ -34,6 +39,9 @@
                     width: 250px;
                     margin: 1rem 0rem 0.6rem 0rem;
                 }
+                @include tablet{
+                    width: 230px;
+                }
             }            
         }
         &--parrafo{
@@ -46,7 +54,10 @@
                 font-size: 18px;
                 text-align: center;
             }
-        
+            @include tablet{
+                font-size: 17px;
+                margin: 1rem;
+            }
         }
     }
     &__world{
@@ -77,7 +88,14 @@
                         font-size: 1.6rem;
                         text-align: center;
                         width: 90%;
-                    }               
+                    } 
+                    @include tablet{
+                        width: 80%;
+                        font-size: 1.6rem;
+                        padding-left: 0rem;
+                        text-align: center;
+                        margin: 1rem;
+                    }              
                 }
                 p{
                     font-family: $fonttexto;
@@ -91,19 +109,27 @@
                         font-size: 18px;
                         text-align: center;
                     }
+                    @include tablet{
+                        font-size: 17px;
+                        text-align: center;
+                    }
                 }
             }
-        &--imagenworld{
-            border-radius: 15px;
-            width: 210px;
-            margin: 5px 5px 2px 5px;
-            border: solid 2px $colorbordeusuario;
-            object-fit: cover;
-            @include movil{
-               width: 250px;
-               margin-bottom: 1rem;
+            &--imagenworld{
+                border-radius: 15px;
+                width: 210px;
+                margin: 5px 5px 2px 5px;
+                border: solid 2px $colorbordeusuario;
+                object-fit: cover;
+                @include movil{
+                   width: 250px;
+                   margin-bottom: 1rem;
+                }
+                @include tablet{
+                    width: 180px;
+                    margin: 1rem;
+                }
             }
-        }
         }
     }
     &__explore{
@@ -126,7 +152,6 @@
             &--imagenExplore{
                 border-radius: 15px;
                 height: 290px;
-                
                 margin: 5px 5px 2px 5px;
                 border: solid 2px $colorbordeusuario;
                 margin: 1rem 1rem;
@@ -134,10 +159,12 @@
                 @include movil{
                     margin-top: 1rem;
                     width: 250px;
-                    margin-bottom: 1rem;
-                    
-                    
-                 }
+                    margin-bottom: 1rem;   
+                }
+                @include tablet{
+                    height: 265px;
+                    margin: 1rem 1rem;
+                }
             }
             &--texto{
                 justify-content: center;
@@ -152,6 +179,12 @@
                         @include movil{
                             font-size: 1.6rem;
                         }
+                        @include tablet{
+                            font-size: 1.6rem;
+                            margin: 0rem;
+                            padding: 0rem;
+                        }
+
                     }
                     p{
                         font-family: $fonttexto;
@@ -165,6 +198,10 @@
                         @include movil{
                             font-size: 18px;
                             margin: 0rem 1rem;
+                        }
+                        @include tablet{
+                            font-size: 17px;
+                            margin: 1rem 0rem;
                         }
                    }
             }

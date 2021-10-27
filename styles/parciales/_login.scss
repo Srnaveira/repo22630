@@ -14,6 +14,9 @@
         height: 70vh;
         background-position-x: 100%;
     }
+    @include tablet{
+        height: 84vh;        
+    }
     &__fielprincipal{
             border-radius: 15px;
             color: $colorprueba3;
@@ -30,10 +33,11 @@
                     width: 300px;
                     padding: 2px;
                     margin: 4px 0px 4px 0px;
-                    font-family: $fontprincipal;
-                    font-size: 1.2rem;
+                    font-family: $fonttexto;
+                    font-style: italic;
+                    font-size: 1rem;
                     border: $colorbordeusuario solid 2px;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     @include movil {
                         width: 280px;
                     }
@@ -46,11 +50,12 @@
                     width: 300px;
                     padding: 2px;
                     margin: 4px 0px 4px 0px;
-                    font-family: $fontprincipal;
+                    font-family: $fonttexto;
+                    font-style: italic;
                     color:black;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     border: $colorbordeusuario solid 2px;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     @include movil {
                         width: 280px;
                     }

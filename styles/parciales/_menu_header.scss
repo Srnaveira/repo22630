@@ -17,22 +17,27 @@
                    li{
                    display: inline-block;
                    margin:  0rem 1rem 0rem 3rem;
-                   
                    @include movil{
                        margin:  0rem 1rem 0rem 1rem;
+                   }
+                   @include tablet{
+                    margin:  0rem 1rem 0rem 2rem;
                    }        
-                      a{
-                        color: $colorfusuario;
-                        font-family: $fontprincipal;
-                        font-size: small;                       
-                        @include movil{
-                            font-size: 12px;
-                        }
-                        &:hover{
-                           color: $colorhovermenus;
-                        }
-                
-                      }
+                       a{
+                         color: $colorfusuario;
+                         font-family: $fontprincipal;
+                         font-size: small;                       
+                         @include movil{
+                             font-size: 12px;
+                         }
+                         @include tablet{
+                             font-size: 11px;
+                         }
+                         &:hover{
+                            color: $colorhovermenus;
+                            transition: 1s;
+                         }
+                       }
                    }
             }
         }      
@@ -50,10 +55,17 @@
             justify-content: center;
             align-items: center;
         }
+        @include tablet{
+            padding: 0rem;
+        }
         h1{
            @include movil{
                padding-top: 1rem;
-           }    
+           }
+           @include tablet{
+            padding-left: 0.5rem;
+            align-items: flex-start;
+            }         
            a{
             color: white;
             font-family: $fontprincipal;
@@ -63,7 +75,11 @@
                 padding-left: 0rem;
                 font-size: 1.6rem;
             }
+            @include tablet{
+                font-size: 1.3rem;
+                padding-left: 0.6rem;
             }
+           }
         } 
         &__menuprincipal{
             display: flex;
@@ -75,6 +91,9 @@
                 @include movil{
                     padding: 1rem 0.40rem 1rem 0.40rem;
                 }
+                @include tablet{
+                    padding: 0.3rem 0.6rem 0rem 1.5rem;
+                }
                 a{
                  display: block;     
                  font-family: $fontprincipal;
@@ -82,10 +101,14 @@
                  color: $colortextomenu;
                  @include movil{
                     font-size: 14px;
-                }
+                 }
+                 @include tablet{
+                    font-size: 0.8rem;
+                 }
                  &:hover{
                     color: $colorhovermenus;
-                        }
+                    transition: 1.5s;
+                 }
                 }
                 .submenu{
                     position: absolute;
