@@ -9,6 +9,9 @@
     bottom: 0;
     width: 100%;
     padding: 0.4rem;
+    @include movil{
+        position: relative;
+    }
     &__divprincipal{
         display: flex;
         justify-content: space-between;

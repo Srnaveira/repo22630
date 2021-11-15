@@ -13,8 +13,9 @@
     align-items: center;
     z-index: 9999;
     @include movil{
-        bottom: 6.5rem;
+        position: absolute;
         flex-direction: column;
+        bottom: auto;
     }
     @include tablet{
         bottom: 3.1rem;
